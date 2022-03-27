@@ -1,0 +1,91 @@
+<div class="c-container">
+
+  <div class="c-form-title">Vamos iniciar!</div>
+
+  <form
+    (submit)="sendCostumerRequest($event)" >
+    <dx-form
+      [(formData)]="request"
+    >
+      <dxi-item
+        itemType="group"
+        caption="Nos conte sobre você">
+        <dxi-item dataField="name">
+          <dxo-label
+            text="Nome completo"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+
+        <dxi-item dataField="address">
+          <dxo-label
+            text="Endereço completo"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+
+        <dxi-item dataField="phone">
+          <dxo-label
+            text="Telefone"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+
+        <dxi-item dataField="email">
+          <dxo-label
+            text="E-mail"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+      </dxi-item>
+
+      <dxi-item
+        itemType="group"
+        caption="Nos conte sobre sua historia">
+
+        <dxi-item
+          dataField="requestTopic"
+          editorType="dxSelectBox"
+          [editorOptions]="{
+          dataSource: requestTopicList
+        }"
+        >
+          <dxo-label
+            text="Qual o assunto da sua história?"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+
+        <dxi-item
+          dataField="requestDescription"
+          editorType="dxTextArea"
+          [editorOptions]="{
+          placeholder: 'Escreva sua historia aqui',
+          height: 200,
+          maxLength: 250
+        }"
+        >
+          <dxo-label
+            text="Descrição completa da história"
+            location="top"
+            alignment="left">
+          </dxo-label>
+        </dxi-item>
+      </dxi-item>
+
+      <dxi-item
+        itemType="button"
+        [buttonOptions]="{
+        text: 'Enviar história',
+        useSubmitBehavior: true
+      }"
+      >
+      </dxi-item>
+    </dx-form>
+  </form>
+</div>
