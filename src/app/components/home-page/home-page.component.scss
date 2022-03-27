@@ -1,0 +1,130 @@
+.c-headline-container{
+  position: relative;
+  height: 500px;
+}
+
+#c-video-headline{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.c-headline-text{
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  width: 300px;
+  text-align: right;
+
+  //positioning
+  right: 2rem;
+  top: 2rem
+}
+
+.c-about-us-container{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0,0,0, 0.3);
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: white;
+}
+
+.c-about-us-title{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c-purpose-section{
+  padding: 4rem 0;
+}
+
+.c-purpose-title{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.c-purpose-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.c-purpose-item{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-purpose-img{
+  width: 180px;
+  height: 180px;
+  margin-bottom: 1rem;
+}
+
+.c-purpose-item-title{
+  font-size: 2rem;
+}
+
+.c-purpose-item-text{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.c-ods-section{
+  padding: 4rem 0;
+}
+
+.c-ods-title{
+  @extend .c-purpose-title;
+  margin-bottom: 1rem;
+}
+
+.c-ods-text-container{
+  display: flex;
+  justify-content: center;
+}
+
+.c-ods-text{
+  font-size: 1.5rem;
+  margin-bottom: 8rem;
+  width: 600px;
+  text-align: center;
+}
+
+.c-partners-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.c-partner-item {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+footer{
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.c-footer-logo{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.c-footer-text{
+  margin-bottom: 0.5rem;
+}
+
+
+

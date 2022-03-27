@@ -1,10 +1,12 @@
 <nav class="c-navbar-container">
-  <h1>App Team Pipa</h1>
-  <div class="c-button-container">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/about">About</a>
+  <h1 class="c-logo">SIMPLE85</h1>
+  <div class="c-button-bar">
+    <div class="c-button-container" *ngFor="let item of navBarData">
+      <dx-button [routerLink]="item.routerLink"
+                 [text]="item.buttonName | uppercase"
+                 stylingMode="text">
+      </dx-button>
+    </div>
   </div>
 </nav>
-
-
 <router-outlet></router-outlet>

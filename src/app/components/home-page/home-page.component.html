@@ -1,1 +1,104 @@
-<p>home-page works!</p>
+<section class="c-headline-container">
+
+  <video autoplay muted loop id="c-video-headline">
+    <source src="/assets/videos/home-justice.mp4" type="video/mp4">
+  </video>
+
+  <!--  <div class="c-headline-text">Garantindo acesso a justiça</div>-->
+
+  <div class="c-about-us-container">
+    <div class="c-about-us-title">Sobre nós</div>
+    <div class="c-about-us-content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat velit et finibus pulvinar.
+      Nullam placerat fermentum leo. Ut ut feugiat justo, in varius tellus.
+      Proin in lectus faucibus, placerat lorem ac, commodo dolor.
+    </div>
+  </div>
+
+</section>
+
+<section class="c-purpose-section">
+  <div class="c-purpose-title">
+    Nosso Propósito
+  </div>
+  <div class="c-purpose-list">
+
+    <div class="c-purpose-item">
+      <img class="c-purpose-img" src="/assets/images/placeholder-circle.png" alt="">
+      <div class="c-purpose-item-title">
+        Title
+      </div>
+      <div class="c-purpose-item-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus nulla id dolor porttitor, id rhoncus
+        nibh mollis.
+      </div>
+    </div>
+
+    <div class="c-purpose-item">
+      <img class="c-purpose-img" src="/assets/images/placeholder-circle.png" alt="">
+      <div class="c-purpose-item-title">
+        Title
+      </div>
+      <div class="c-purpose-item-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus nulla id dolor porttitor, id rhoncus
+        nibh mollis.
+      </div>
+    </div>
+
+    <div class="c-purpose-item">
+      <img class="c-purpose-img" src="/assets/images/placeholder-circle.png" alt="">
+      <div class="c-purpose-item-title">
+        Title
+      </div>
+      <div class="c-purpose-item-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus nulla id dolor porttitor, id rhoncus
+        nibh mollis.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="c-ods-section">
+  <div class="c-ods-title">
+    Desenvolvimento Sustentável
+  </div>
+  <div class="c-ods-text-container">
+    <div class="c-ods-text">
+      A ONU e seus parceiros no Brasil estão trabalhando para atingir os Objetivos de Desenvolvimento Sustentável.
+      São 17 objetivos ambiciosos e interconectados que abordam os principais desafios de desenvolvimento enfrentados
+      por pessoas no Brasil e no mundo.
+    </div>
+  </div>
+  <dx-gallery
+    [dataSource]="galleryData"
+    [height]="200"
+    [width]="'auto'"
+    [initialItemWidth]="200"
+  >
+  </dx-gallery>
+</section>
+
+<section class="c-ods-section">
+  <div class="c-ods-title">
+    Nossos Parceiros
+  </div>
+  <div class="c-ods-text-container">
+    <div class="c-ods-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus nulla id dolor porttitor,
+      id rhoncus nibh mollis. Duis et urna tortor. Suspendisse ullamcorper nisi vitae felis ullamcorper accumsan.
+    </div>
+  </div>
+  <div class="c-partners-list">
+    <img class="c-partner-item" src="/assets/images/partners/logo-apsv.png" alt="">
+    <img class="c-partner-item" src="/assets/images/partners/logo-solar.png" alt="">
+    <img class="c-partner-item" src="/assets/images/partners/logo-prefeitura-pgm.svg" alt="">
+  </div>
+</section>
+
+<footer>
+  <div class="c-footer-logo">SIMPLE85</div>
+  <div class="c-footer-text">Desenvolvido por SIMPLE85, 2022</div>
+  <dx-button text="VOLTAR AO TOPO"></dx-button>
+</footer>
+

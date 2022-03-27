@@ -2,11 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 1rem;
 }
 
-.c-button-container{
-  a{
-    text-decoration: none;
-    margin-right: 12px;
-  }
+.c-button-bar{
+  display: flex;
 }
