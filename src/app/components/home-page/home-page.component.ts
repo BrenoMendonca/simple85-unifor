@@ -24,4 +24,9 @@ export class HomePageComponent implements OnInit {
     return urlList;
   }
 
+  goToStart(): void {
+    let doc = document.getElementById("begin")
+    if(doc) doc.scrollIntoView({behavior: 'smooth'});
+  }
+
 }
